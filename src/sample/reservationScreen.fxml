@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="reservationScreenAnchor" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1100.0" spacing="10.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ReservationScreen">
+   <children>
+      <HBox alignment="CENTER" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Pane id="pane" prefHeight="450.0" prefWidth="400.0">
+               <children>
+                  <GridPane alignment="CENTER" hgap="10.0" layoutX="30.0" layoutY="30.0" prefHeight="390.0" prefWidth="340.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="LEFT" percentWidth="40" />
+                        <ColumnConstraints percentWidth="60" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints percentHeight="14.28" />
+                        <RowConstraints percentHeight="14.28" />
+                        <RowConstraints percentHeight="14.28" />
+                        <RowConstraints percentHeight="14.28" />
+                        <RowConstraints percentHeight="14.28" />
+                        <RowConstraints percentHeight="14.28" />
+                        <RowConstraints percentHeight="14.28" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="Customer Name" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                           <font>
+                              <Font name="System bold" size="14" />
+                           </font>
+                        </Label>
+                        <TextField id="textField" fx:id="customerNameField" promptText="Enter Name" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                        <Label text="Phone" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System bold" size="14" />
+                           </font>
+                        </Label>
+                        <TextField id="textField" fx:id="customerPhoneField" promptText="Enter Phone Number" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Address" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System bold" size="14" />
+                           </font>
+                        </Label>
+                        <TextField id="textField" fx:id="customerAddressField" promptText="Enter Address" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="Enter Email" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System bold" size="14" />
+                           </font>
+                        </Label>
+                        <TextField id="textField" fx:id="customerMailField" promptText="Enter Email" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="Duration" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System bold" size="14" />
+                           </font>
+                        </Label>
+                        <TextField id="textField" fx:id="customerDurationField" promptText="Enter Duration" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label text="Number Of People" GridPane.columnIndex="0" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System bold" size="14" />
+                           </font>
+                        </Label>
+                        <TextField id="textField" fx:id="customerPeopleNumberField" promptText="People Number" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label text="Payment Type" GridPane.columnIndex="0" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="System bold" size="14" />
+                           </font>
+                        </Label>
+                        <ComboBox id="comboBox" fx:id="paymentBox" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Select Payment type" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="visa" />
+                                 <String fx:value="cash" />
+                                 <String fx:value="american express" />
+                              </FXCollections>
+                           </items>
+                        </ComboBox>
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+            <Pane id="pane" prefHeight="450.0" prefWidth="400.0">
+               <children>
+                  <GridPane alignment="CENTER" hgap="10.0" layoutX="30.0" layoutY="30.0" prefHeight="390.0" prefWidth="340.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="LEFT" percentWidth="40" />
+                        <ColumnConstraints percentWidth="60" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints percentHeight="14.28" />
+                        <RowConstraints percentHeight="14.28" />
+                        <RowConstraints percentHeight="14.28" />
+                        <RowConstraints percentHeight="14.28" />
+                        <RowConstraints percentHeight="14.28" />
+                        <RowConstraints percentHeight="14.28" />
+                        <RowConstraints percentHeight="14.28" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="Capacity" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System bold" size="14" />
+                           </font>
+                        </Label>
+                        <Label text="Room Number">
+                           <font>
+                              <Font name="System bold" size="14" />
+                           </font>
+                        </Label>
+                        <Label text="Start Date" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System bold" size="14" />
+                           </font>
+                        </Label>
+                        <Label text="End Date" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System bold" size="14" />
+                           </font>
+                        </Label>
+                        <Label text="RoomPrice" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System bold" size="14" />
+                           </font>
+                        </Label>
+                        <TextField id="textField" fx:id="customerServicesField" promptText="Services" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label text="Total" GridPane.columnIndex="0" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="System bold" size="14" />
+                           </font>
+                        </Label>
+                        <DatePicker id="textField" fx:id="startDateField" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="200.0" promptText="Start Date" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <DatePicker id="textField" fx:id="endDateField" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="200.0" promptText="End Date" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="totalField" text="£0.00" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="roomPrice" text="£0.00" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Services" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System bold" size="14" />
+                           </font>
+                        </Label>
+                        <Label fx:id="capacityLabel" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox id="comboBox" fx:id="roomNumberCombo" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Select a Room" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Pane id="pane" prefHeight="100.0" prefWidth="815.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="850.0" spacing="13.0">
+                     <children>
+                        <Button id="button" mnemonicParsing="false" onAction="#bookRoom" prefHeight="30.0" prefWidth="80.0" text="Book">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <effect>
+                              <DropShadow blurType="GAUSSIAN" color="#0000004c" height="15.07" radius="6.54" width="13.09" />
+                           </effect>
+                        </Button>
+                        <Button id="button" mnemonicParsing="false" onAction="#cancel" prefHeight="30.0" prefWidth="80.0" text="Back">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <effect>
+                              <DropShadow blurType="GAUSSIAN" color="#0000004d" height="13.75" radius="6.21" width="13.09" />
+                           </effect>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

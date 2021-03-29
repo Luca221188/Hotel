@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="homeScreenPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1100.0" spacing="20.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminScreen">
+   <children>
+      <HBox alignment="CENTER" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Pane id="pane" fx:id="homePane" onMouseClicked="#onMouseClicked" onMouseEntered="#setOnMouseEntered" onMouseExited="#setOnMouseExit" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="90.0" layoutX="55.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/010-home.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="79.0" layoutY="149.0" text="Home">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane id="pane" fx:id="employeesPane" onMouseClicked="#onMouseClicked" onMouseEntered="#setOnMouseEntered" onMouseExited="#setOnMouseExit" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="90.0" layoutX="55.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/002-businessman.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="66.0" layoutY="150.0" text="Employees">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane id="pane" fx:id="customersPane" onMouseClicked="#onMouseClicked" onMouseEntered="#setOnMouseEntered" onMouseExited="#setOnMouseExit" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="90.0" layoutX="55.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/005-user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="67.0" layoutY="149.0" text="Customers">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Pane id="pane" fx:id="logoutPane" onMouseClicked="#logOut" onMouseEntered="#setOnMouseEntered" onMouseExited="#setOnMouseExit" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="90.0" layoutX="55.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/001-exit-1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="75.0" layoutY="149.0" text="Logout">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane id="pane" fx:id="exitPane" onMouseClicked="#exitApplication" onMouseEntered="#setOnMouseEntered" onMouseExited="#setOnMouseExit" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="90.0" layoutX="55.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/002-direction-1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="85.0" layoutY="149.0" text="Exit">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

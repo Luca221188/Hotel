@@ -1,0 +1,6 @@
+Luque,Blappa01,Luca Beltrame,Madeira road 18,7564093592,22 - 11 - 2019,1100.2,admin
+Dado,Blappa02,Davide Beltrame,Westover road 5,34567,18 - 06 - 2019,2340.75,admin
+Albany,Blappa04,Alberto Tomba,Via Palazzolo 4,3488628495,02 - 04 - 2019,2000.0,user
+Porko,Blappa05,Michele Paron,Via Spessa 33,5645456767,04 - 12 - 2019,2000.0,admin
+a,a,San Gennaro,Via Corleone 64,2,01 - 12 - 2019,0.0,admin
+q,q,Barabba,Via Crucis 8,345557,03 - 12 - 2019,89.77,user

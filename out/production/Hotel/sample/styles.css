@@ -1,0 +1,114 @@
+#loginScreenAnchor {
+        -fx-background-image:url('img/login.jpeg');
+        -fx-background-position:center;
+}
+
+#homeScreenPane {
+        -fx-background-image:url('img/person-woman-hotel-laptop.jpg');
+        -fx-background-position:center;
+}
+
+#reservationScreenAnchor {
+       -fx-background-image:url('img/pexels-photo-271643.jpeg');
+       -fx-background-position:center;
+}
+
+#pane {
+        -fx-background-color:rgba(255, 255, 255, 0.6);
+        -fx-background-radius:6px;
+}
+#button {
+        -fx-effect: dropshadow(two-pass-box ,#c2c2c2, 1, 0.0 , 2, 3);
+        -fx-text-fill: #fefefe;
+        -fx-background-color:#e6ac55;
+        -fx-background-radius:2;
+        -fx-background-insets:0;
+
+}
+#button:hover{
+        -fx-background-color: #f2961d;
+}
+#button:pressed {
+        -fx-background-color:#e6ac55;
+        -fx-background-insets:-1;
+}
+#button:focused {
+        -fx-border-color:transparent;
+        -fx-border-style: solid;
+        -fx-border-radius: 0, 0;
+        -fx-border-width:0;
+        -fx-border-insets:0;
+
+
+}
+#textField {
+        //-fx-opacity:0.80;
+        ////-fx-border-color:#e6ac55;
+
+        //-fx-text-box-border: transparent;
+        //-fx-background-color: -fx-control-inner-background;
+        ////-fx-background-insets: 0;
+        ////-fx-padding: 3 3 3 3;
+
+
+        //Alternative
+        -fx-opacity:0.80;
+        -fx-border-color:transparent;
+        -fx-border-radius:2;
+        -fx-text-box-border: transparent;
+}
+#textField:focused{
+        ////-fx-faint-focus-color:rgba(230, 167, 85,0.2);
+        ////-fx-focus-color:#e6ac55;
+        ////-fx-focus-color: transparent;
+
+
+        //Alternative
+        -fx-focus-color:#e6ac55;
+        -fx-faint-focus-color:rgba(230, 167, 85,0.2);
+}
+
+#datePicker {
+        -fx-opacity:0.80;
+}
+#datePicker:focused{
+        -fx-focus-color:#e6ac55;
+         -fx-faint-focus-color:rgba(230, 167, 85,0.2);
+
+}
+#comboBox{
+        -fx-opacity:0.80;
+        -fx-background-color:rgba(255,255,255,0.9);
+        -fx-background-insets:0;
+
+}
+
+#comboBox:focused{
+        -fx-border-color:#e6ac55;
+        -fx-border-insets:-1;
+        -fx-border-radius:2px;
+}
+#tableView {
+        -fx-opacity:0.8;
+        -fx-selection-bar:#e6ac55;
+}
+#column {
+        -fx-font-weight:bold;
+        -fx-text-fill:rgba(0,0,0,1);
+        -fx-alignment: CENTER;
+}
+#tableView .column-header .label {
+    -fx-text-fill: red;
+}
+#tableView:focused{
+        -fx-background-color:#e6ac55;
+
+}
+.table-row-cell {
+    -fx-cell-size: 40px;
+}
+#checkbox:focused{
+        -fx-focus-color:rgb(230, 167, 85);
+        -fx-faint-focus-color:rgba(230, 167, 85,0.2);
+
+}
